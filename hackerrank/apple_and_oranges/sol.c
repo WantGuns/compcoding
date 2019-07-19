@@ -13,7 +13,7 @@ int main(){
   }
   for (i = 0; i<n; i++){
     scanf("%d", &temp);
-    if (temp >= b-t && temp <= b-s)
+    if (temp <= t-b && temp >= s-b)
     counto++;
   }
   printf("%d\n", counta );
