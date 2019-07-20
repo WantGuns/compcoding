@@ -11,7 +11,6 @@ int main() {
   int mid;
   if (n%2 == 0) mid = n/2;
   else mid = (1 + (n/2));
-  cout<<mid<<endl;
   int ketu = 0, petu = 0;
 
   for (int i = 0; i < mid; i++) {
