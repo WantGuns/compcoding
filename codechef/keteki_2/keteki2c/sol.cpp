@@ -1,3 +1,6 @@
+//wip for bigger numbers. works fine for smaller ones.
+
+
 #include <iostream>
 using namespace std;
 
