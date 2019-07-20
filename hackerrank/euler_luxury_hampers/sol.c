@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-  int n, m, numa,numb, flag, count = -1, sa[n], sb[n];
+  int n, m, numa,numb, flag, count = -1;
   scanf("%d", &n);
-  int a[n], b[n];
+  int a[n], b[n], sa[n], sb[n];
   for (int i=0; i<n ; i++)
   scanf("%d", &a[n]);
   for (int i=0; i<n ; i++)
@@ -19,7 +19,7 @@ int main(){
           count++;
           sa[count] = numa;
           sb[count] = numb;
-        }  
+        }
       }
     }
   }
