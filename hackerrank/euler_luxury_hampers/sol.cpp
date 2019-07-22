@@ -1,6 +1,9 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+
+using namespace std;
+
 int main(){
-  int n, m, numa,numb, flag, count = -1;
+  int n, numa,numb, flag, count = -1, d;
   scanf("%d", &n);
   int a[n], b[n], sa[n], sb[n];
   for (int i=0; i<n ; i++)
@@ -23,6 +26,6 @@ int main(){
       }
     }
   }
-
-  printf("%d\n" , (sa[n]*a[n])/(sb[n]*b[n]) );
+  d = __gcd((sa[n]*a[n]), (sb[n]*b[n]));
+  printf("%d/%d" , (sa[n]*a[n])/d, (sb[n]*b[n])/d );
 }
