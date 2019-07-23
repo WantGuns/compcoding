@@ -26,6 +26,11 @@ int main(){
       }
     }
   }
+  for (int i = 0; i <n; i++) {
+  cout<<sa[i]<<"  "<<sb[i]<<endl;
+}
+  cout<<(sa[n]*a[n])<<endl<<(sb[n]*b[n])<<endl;
   d = __gcd((sa[n]*a[n]), (sb[n]*b[n]));
   printf("%d/%d" , (sa[n]*a[n])/d, (sb[n]*b[n])/d );
+  cin.get();
 }
