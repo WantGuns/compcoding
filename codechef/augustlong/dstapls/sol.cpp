@@ -2,24 +2,21 @@
 #include <cmath>
 using namespace std;
 
+#define MOD 1000000007
+
 int main() {
   int test;
   cin >> test;
   while (test) {
-    long long int boxes, apples;
-    float exp;
+    long double boxes, apples;
+    float temp;
     cin  >> apples >> boxes;
-    if (boxes == 1) {
+    temp = (((apples/MOD)/(boxes/MOD))/(boxes/MOD))/MOD;
+    if (floor(temp) == ceil(temp))
       cout << "NO" << endl;
-      break;
-    }
-    else {
-      exp = log(apples)/log(boxes);
-      if ((floor(exp) == ceil(exp)) && (exp != 1))
-      cout << "NO" << endl;
-      else
+    else
       cout << "YES" << endl;
-    }
     test--;
   }
+  return 0;
 }
